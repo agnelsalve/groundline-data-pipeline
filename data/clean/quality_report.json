@@ -1,0 +1,233 @@
+{
+  "run_id": "20260927T211744Z",
+  "collected_at": "2026-09-27T21:17:44.790Z",
+  "window": {
+    "lookback_days": 45,
+    "since": "2026-08-13",
+    "until": "2026-09-27"
+  },
+  "totals": {
+    "collected": 330,
+    "duplicates_removed": 11,
+    "failed_quality_checks": 23,
+    "unique_records": 319,
+    "trimmed_for_balance": 83,
+    "kept": 213,
+    "quality_pass_rate_pct": 92.8,
+    "fully_complete_records": 67,
+    "fully_complete_pct": 31.5
+  },
+  "kept_by": {
+    "source_type": {
+      "news_rss": 120,
+      "research_api": 34,
+      "community_api": 59
+    },
+    "focus": {
+      "AI": 196,
+      "Weave": 17
+    },
+    "topic": {
+      "rag_grounding": 57,
+      "ai_industry": 30,
+      "ai_trust_safety": 11,
+      "ai_agents": 90,
+      "ai_evaluation": 8,
+      "weave_brand": 17
+    },
+    "signal_type": {
+      "news": 105,
+      "research_paper": 34,
+      "community_discussion": 59,
+      "legal_notice": 3,
+      "m_and_a": 5,
+      "analyst_rating": 5,
+      "insider_trade": 2
+    }
+  },
+  "field_completeness_pct": {
+    "record_id": 100,
+    "title": 100,
+    "url": 100,
+    "published_date": 100,
+    "source_name": 100,
+    "topic": 100,
+    "summary": 31.5,
+    "author": 59.2
+  },
+  "date_range": {
+    "earliest": "2026-08-14",
+    "latest": "2026-09-27"
+  },
+  "rejects_by_reason": {
+    "off_topic": 23,
+    "duplicate_title": 9,
+    "duplicate_url": 2
+  },
+  "trimmed_by_reason": {
+    "feed_cap": 83
+  },
+  "sources": {
+    "techcrunch_ai": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 20,
+      "kept": 17,
+      "rejected": 3,
+      "trimmed": 0
+    },
+    "mit_tech_review_ai": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 10,
+      "kept": 6,
+      "rejected": 4,
+      "trimmed": 0
+    },
+    "the_verge_ai": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 10,
+      "kept": 10,
+      "rejected": 0,
+      "trimmed": 0
+    },
+    "gnews_ai_agents": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 100,
+      "kept": 35,
+      "rejected": 4,
+      "trimmed": 61
+    },
+    "gnews_ai_grounding": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 61,
+      "kept": 35,
+      "rejected": 4,
+      "trimmed": 22
+    },
+    "gnews_weave": {
+      "source_type": "news_rss",
+      "status": "ok",
+      "message": "",
+      "fetched": 19,
+      "kept": 17,
+      "rejected": 2,
+      "trimmed": 0
+    },
+    "arxiv_grounding_agents": {
+      "source_type": "research_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 35,
+      "kept": 34,
+      "rejected": 1,
+      "trimmed": 0
+    },
+    "hn_ai_agents": {
+      "source_type": "community_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 20,
+      "kept": 20,
+      "rejected": 0,
+      "trimmed": 0
+    },
+    "hn_agentic": {
+      "source_type": "community_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 20,
+      "kept": 17,
+      "rejected": 3,
+      "trimmed": 0
+    },
+    "hn_evals": {
+      "source_type": "community_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 20,
+      "kept": 11,
+      "rejected": 9,
+      "trimmed": 0
+    },
+    "hn_ai_safety": {
+      "source_type": "community_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 12,
+      "kept": 9,
+      "rejected": 3,
+      "trimmed": 0
+    },
+    "hn_hallucination": {
+      "source_type": "community_api",
+      "status": "ok",
+      "message": "",
+      "fetched": 3,
+      "kept": 2,
+      "rejected": 1,
+      "trimmed": 0
+    },
+    "newsapi_ai": {
+      "source_type": "news_api",
+      "status": "unavailable",
+      "message": "Source unavailable: NEWSAPI_KEY not set in .env (optional source skipped)",
+      "fetched": 0,
+      "kept": 0,
+      "rejected": 0,
+      "trimmed": 0
+    },
+    "newsapi_weave": {
+      "source_type": "news_api",
+      "status": "unavailable",
+      "message": "Source unavailable: NEWSAPI_KEY not set in .env (optional source skipped)",
+      "fetched": 0,
+      "kept": 0,
+      "rejected": 0,
+      "trimmed": 0
+    }
+  },
+  "checks": [
+    {
+      "check": "Every kept record has title, URL, source and date",
+      "pass": true
+    },
+    {
+      "check": "Every date is YYYY-MM-DD",
+      "pass": true
+    },
+    {
+      "check": "No date in the future",
+      "pass": true
+    },
+    {
+      "check": "No duplicate record IDs",
+      "pass": true
+    },
+    {
+      "check": "No duplicate URLs",
+      "pass": true
+    },
+    {
+      "check": "Every record has a topic",
+      "pass": true
+    },
+    {
+      "check": "At least 3 source systems contributed",
+      "pass": true
+    },
+    {
+      "check": "Record count within 50–300 target",
+      "pass": true
+    }
+  ],
+  "all_checks_passed": true
+}
