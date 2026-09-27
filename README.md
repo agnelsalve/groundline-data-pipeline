@@ -107,7 +107,7 @@ The data mix is **92% AI** (agents, RAG/grounding, evaluation, trust and safety)
 4. Open <http://localhost:5678>, choose **Import from File**, and select `workflow/Salve_Agnel_A3_Workflow.json`
 5. Click **Execute workflow**. The results are written to `data/clean/`
 
-Or run it without the browser: `powershell -ExecutionPolicy Bypass -File scriptsun-pipeline.ps1`
+Or run it without the browser: `powershell -ExecutionPolicy Bypass -File scripts\run-pipeline.ps1`
 
 ## License
 
